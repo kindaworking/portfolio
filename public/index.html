@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Web Developer</title>
+  <title>Captain's Projects</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,12 +11,11 @@
   <header>
     <div class="container">
       <div class="logo">
-        <h1>Your Name</h1>
+        <h1>Captain's Projects</h1>
       </div>
       <nav>
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="/" class="active">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-toggle">
@@ -28,27 +27,32 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Web Developer & Designer</h1>
-      <p>Crafting elegant, functional digital experiences</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h1>Games and tools</h1>
+      <p>A collection of games and utilities I have built over time</p>
+      <a href="#projects" class="btn">See Projects</a>
     </div>
   </section>
 
   <section id="projects" class="projects">
     <div class="container">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <div class="projects-grid">
         <!-- Project 1 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 1">
+            <img src="/img/slidle.png" alt="Slidle Screenshot">
           </div>
           <div class="project-info">
-            <h3>Project One</h3>
-            <p>A web application for [describe purpose]. Built with React, Node.js, and MongoDB.</p>
+            <h3>Slidle</h3>
+            <p>I always wanted to play a digital version of Mutant Meeples. I decided to make my own, with the ability to randomly generate an unlimited number of puzzles. Play the daily puzzle, or dive in and make your own to share with friends.</p>
+            <div class="tech-tags">
+              <span>Node.js</span>
+              <span>HTML</span>
+              <span>JavaScript</span>
+            </div>
             <div class="project-links">
-              <a href="#" class="btn-small">View Live</a>
-              <a href="#" class="btn-small btn-outline">GitHub</a>
+              <a href="https://slidle.captainsprojects.com/game.html?dailyPuzzle=true" class="btn-small">Try It Out</a>
+              <a href="https://boardgamegeek.com/thread/3287023/i-miss-mutant-meeples-so-much-i-made-my-own" class="btn-small btn-outline">More information</a>
             </div>
           </div>
         </div>
@@ -56,14 +60,19 @@
         <!-- Project 2 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 2">
+            <img src="/img/monikers.png" alt="Monikers Screenshot">
           </div>
           <div class="project-info">
-            <h3>Project Two</h3>
-            <p>An e-commerce platform with [describe features]. Utilizes Express.js and PostgreSQL.</p>
+            <h3>Monikers</h3>
+            <p>A digital implementation of the boardgame Monikers. Full multiplayer real-time support. The final round is replaced with a round of Charades</p>
+            <div class="tech-tags">
+              <span>Express.js</span>
+              <span>HTML</span>
+              <span>Javascript</span>
+            </div>
             <div class="project-links">
-              <a href="#" class="btn-small">View Live</a>
-              <a href="#" class="btn-small btn-outline">GitHub</a>
+              <a href="https://monikers.captainsprojects.com/" class="btn-small">Try It Out</a>
+              <a href="https://boardgamegeek.com/boardgame/156546/monikers" class="btn-small btn-outline">More information</a>
             </div>
           </div>
         </div>
@@ -71,14 +80,39 @@
         <!-- Project 3 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 3">
+            <img src="/img/color-ascension.png" alt="Color Ascension Screenshot">
           </div>
           <div class="project-info">
-            <h3>Project Three</h3>
-            <p>A data visualization dashboard for [describe purpose]. Built with D3.js and Vue.</p>
+            <h3>Color Ascension</h3>
+            <p>Abstract patterns are drawn on cards. Rank them based on how much of a particular color is visible per card.</p>
+            <div class="tech-tags">
+              <span>Node.js</span>
+              <span>Javascript</span>
+            </div>
             <div class="project-links">
-              <a href="#" class="btn-small">View Live</a>
-              <a href="#" class="btn-small btn-outline">GitHub</a>
+              <a href="https://colorascension.captainsprojects.com/" class="btn-small">Try It Out</a>
+              <a href="https://boardgamegeek.com/thread/3465192/i-couldnt-stand-waiting-for-figment-so-i-made-my-o" class="btn-small btn-outline">More Information</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/img/quiz.png" alt="Quiz Utility Screenshot">
+          </div>
+          <div class="project-info">
+            <h3>Quiz Utility Tool</h3>
+            <p>A tool that facilitates hosting a quiz. Users authenticate, the host controls scores, items, and what kind of round it is. Custom web source outputs are available to assist in streaming quiz to something like Twitch.</p>
+            <p>Currently only for authenticated members. Contact me for a demo</p>
+            <div class="tech-tags">
+              <span>Node.js</span>
+              <span>Javascript</span>
+              <span>OBS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://quiz.captainsprojects.com/index.html" class="btn-small">Try It Out</a>
+              <!-- <a href="#" class="btn-small btn-outline">Source Code</a> -->
             </div>
           </div>
         </div>
@@ -91,18 +125,16 @@
       <h2>Get In Touch</h2>
       <div class="contact-content">
         <div class="contact-info">
+          <p>Interested in one of my projects or want to chat about a new idea?</p>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <span>youremail@example.com</span>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <span>+1 (123) 456-7890</span>
+            <span>amohlmann@gmail.com</span>
           </div>
           <div class="social-links">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/kindaworking" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://boardgamegeek.com/user/kindaworking" aria-label="BoardGameGeek" class="social-icon">
+                <img src="https://cf.geekdo-static.com/icons/favicon2.ico" alt="BoardGameGeek" class="custom-icon">
+              </a>
           </div>
         </div>
       </div>
@@ -111,7 +143,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+      <p>&copy; 2025 Captain's Projects</p>
     </div>
   </footer>
 

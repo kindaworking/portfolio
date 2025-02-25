@@ -69,27 +69,40 @@ document.addEventListener('DOMContentLoaded', function() {
     setActiveNavItem();
     
     // Simple reveal animation for project cards
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+    // const observerOptions = {
+    //   threshold: 0.1,
+    //   rootMargin: '0px 0px -50px 0px'
+    // };
     
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-          observer.unobserve(entry.target);
-        }
+    // const observer = new IntersectionObserver(function(entries) {
+    //   entries.forEach(entry => {
+    //     if (entry.isIntersecting) {
+    //       entry.target.classList.add('reveal');
+    //       observer.unobserve(entry.target);
+    //     }
+    //   });
+    // }, observerOptions);
+    
+    // // Observe project cards
+    // document.querySelectorAll('.project-card').forEach(card => {
+    //   card.style.opacity = '0';
+    //   card.style.transform = 'translateY(20px)';
+    //   card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    //   observer.observe(card);
+    // });
+
+    document.querySelectorAll('.project-card').forEach((card, index) => {
+        // Start with cards invisible
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        
+        // Add a slight delay for each card to create a staggered effect
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 100 * index); // Stagger by 100ms per card
       });
-    }, observerOptions);
-    
-    // Observe project cards
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(20px)';
-      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(card);
-    });
     
     // Reveal style
     document.head.insertAdjacentHTML('beforeend', `
